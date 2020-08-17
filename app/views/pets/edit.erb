@@ -1,0 +1,12 @@
+<form action="/pets/<%=@pet.id %>" method="post">
+<input id="hidden" type="hidden" name="_method" value="patch">
+<input type="text" name="name" value="<%=@pet.name%>">
+<input type="text_area" name="age" value="<%=@pet.age%>">
+<input type="text_area" name="notes" value="<%=@pet.notes%>">
+<input type="submit" value="Update your fluffy frewnd">
+</form>
+
+<form method="post" action="/pets/<%=@pet.id %>">
+<input id="hidden" type="hidden" name="_method" value="DELETE">
+<input type="submit" value="delete">
+</form>

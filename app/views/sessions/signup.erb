@@ -1,0 +1,48 @@
+
+
+<h1>Let's be Frewnds!</h1>
+    
+<img src="https://i.pinimg.com/564x/b8/d6/f8/b8d6f8b5c2b12c50752f04351d60c6b1.jpg">
+<h3>Sign Up<h3>
+<% if current_user && current_user.errors.any? %>
+    <%current_user.errors.full_messages.each do |m|%>
+<p class="danger"><%= m%></p>
+    <%end%>
+<%end%>
+
+<form action="/signup"method="post">
+    <input type="text" placeholder="Username" name="username">
+    <input type="password" placeholder="Password" name="password">
+    <input type="submit" value="Sign Up">
+</form>
+
+<a href="/login">Log In</a>
+<body>
+<head>
+<style>
+ img {
+     display: block;
+      margin-left: auto;
+     margin-right: auto;
+    width: 40%;
+  } 
+
+
+
+ body {
+     background-color: #F0F0F0;
+ }
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+}
+h1 {
+    color: crimson;
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+</head>
+</style>
+</body>

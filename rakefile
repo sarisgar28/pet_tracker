@@ -1,0 +1,8 @@
+require_relative './config/env'
+
+require 'sinatra/activerecord/rake'
+
+desc "work with your code in the console"
+task :console do 
+    Pry.start 
+end 

@@ -1,0 +1,36 @@
+<h1>Hi Hooman!<h1>
+<img src="https://i.pinimg.com/564x/dc/f2/b3/dcf2b3a3352982afec20acb707e30d1c.jpg">
+<h3>Log In<h3>
+<head>
+<style>
+ p {
+     color: salmon;
+ }
+ body {
+     background-color: #F0F0F0;
+ }
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+
+</style>
+</head>
+
+<% if @error%>
+<p class="danger"><%= @error %></p>
+<%end%>
+
+<form action="/login" method="post"> 
+<input type="text" placeholder="Username" name="username">
+<input type="password" placeholder="Password" name="password">
+<input type="submit" value="Log In">
+</form>
+
+<a href="/signup">Sign Up</a>

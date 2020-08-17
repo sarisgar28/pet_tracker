@@ -1,0 +1,30 @@
+<style>
+ p {
+     color: salmon;
+ }
+ body {
+     background-color: #F0F0F0;
+ }
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+}
+h1 {
+    text-align: center;
+}
+
+</style>
+<h1><%= @pet.name%></h1>
+<h2>Pet's Age</h2>
+<%=@pet.age%>
+<h2>Notes</h2>
+<%=@pet.notes%>
+<br>
+<a href= '/pets'>Home</a>
+<br>
+<a href='/pets/<%=@pet.id%>>/edit'> Update your Pets here</a>
+<br>
+<form method="post" action="/pets/<%= @pet.id %>">
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="delete">
+</form>

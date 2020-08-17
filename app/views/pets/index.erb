@@ -1,0 +1,13 @@
+<h2>ADD MORE FURRY FRIENDS<h2>
+
+<a href= "/pets/new">Furry Frewnd!</a><br>
+
+<% @pets.each do|pet| %>
+<a href="/pets/<%=pet.id%>"><%=pet.name%></a>
+<%end%>
+
+<br>
+<form method="post" action="/logout">
+  <input  type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log out">
+</form>
