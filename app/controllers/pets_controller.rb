@@ -9,7 +9,7 @@ class PetsController < ApplicationController
     get '/pets' do 
         authenticate 
         @pets = current_user.pets.all
-        erb :'/pets/new'
+        erb :'/pets/dashboard'
     end 
   
     post '/pets' do
@@ -31,7 +31,7 @@ class PetsController < ApplicationController
         @pet = Pet.find_by(id: params[:id])
         @pet.update(name: params[:name],age: params[:age],notes: params[:notes])
         @pet.save
-        redirect '/pets'
+        redirect '/pets/new'
     end
 
     get '/pets/:id' do
@@ -40,7 +40,7 @@ class PetsController < ApplicationController
     end 
 
     delete '/pets/:id' do 
-        @pets = Pet.find_by(id: params[:id])
+        @pet = Pet.find_by(id: params[:id])
         @pet.destroy
         redirect '/home'
     end 

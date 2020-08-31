@@ -1,0 +1,39 @@
+<h2>ABOUT YOUR FURRY FRIEND:<h2>
+
+<a href= "/pets/new">Furry Frewnd!</a><br>
+
+<% @pets.each do|pet| %>
+<a href="/pets/<%=pet.id%>"><%=pet.name%></a>
+<%end%>
+
+<br>
+<form method="post" action="/logout">
+  <input  type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log out">
+</form>
+<style>
+
+ body {
+     background-color: #F0F0F0;
+ }
+
+body {
+    font-family: "Lucida Console", Courier, monospace;
+  
+}
+h1 {
+    color: crimson;
+    text-align: center;
+}
+h2 {
+    color: crimson;
+    text-align: center;
+    
+}
+form { 
+margin: 0 auto; 
+width:250px;
+
+}
+
+</style>

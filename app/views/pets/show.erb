@@ -10,19 +10,38 @@ body {
     font-family: "Lucida Console", Courier, monospace;
 }
 h1 {
+    color: #FFB6C1;
     text-align: center;
+}
+h2 {
+    color: salmon;
+    text-align: center;
+}
+h3{
+    color: #FFB6C1;
+    text-align: center;
+}
+h4 {
+    color: #FFB6C1;
+
+}
+form {
+    margin: 0 auto; 
+    width:250px;
+
 }
 
 </style>
-<h1><%= @pet.name%></h1>
-<h2>Pet's Age</h2>
-<%=@pet.age%>
-<h2>Notes</h2>
-<%=@pet.notes%>
+<h4><a href= '/pets'>HOME</a></h4>
+<h1><%=@pet.name%></h1>
+<h1>Pet's Age</h1>
+<h2><%=@pet.age%></h2>
+<h1>Notes</h1>
+<h2><%=@pet.notes%></h2>
 <br>
-<a href= '/pets'>Home</a>
+
 <br>
-<a href='/pets/<%=@pet.id%>>/edit'> Update your Pets here</a>
+<h3><a href='/pets/<%=@pet.id%>>/edit'> Update your Pets here</a></h3>
 <br>
 <form method="post" action="/pets/<%= @pet.id %>">
   <input id="hidden" type="hidden" name="_method" value="DELETE">
