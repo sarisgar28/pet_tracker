@@ -4,9 +4,10 @@
 
  <img src="https://i.pinimg.com/564x/18/82/e0/1882e07aecdf7a3286a5013cdad5d0c0.jpg">
  <br>
-<h2> HERE IS YOUR FURRY FRIEND:<h2>
+<h2> HERE ARE YOUR FURRY FRIENDS:<h2>
 <% @pets.each do|pet| %>
-<a href="/pets/<%=pet.id%>"><%=pet.name%>:<%=pet.notes%></a>
+<a href="/pets/<%=pet.id%>">
+<dt><%=pet.name%></a></dt>
 <%end%>
 
 <br>
@@ -16,17 +17,15 @@
 </form>
 <style>
 
- body {
+ body, input{
      background-color: #F0F0F0;
+     font-family: "Lucida Console", Courier, monospace;
+    color: salmon;
  }
-
-body {
-    font-family: "Lucida Console", Courier, monospace;
-  
-}
-h1,a {
+h1,a{
     color: salmon;
     text-align: center;
+    text-decoration-color: LightYellow;
 }
 h2 {
     color: crimson;

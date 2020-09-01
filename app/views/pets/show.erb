@@ -3,8 +3,10 @@
 <body>
 <dl>
 <dt><h1><%=@pet.name%></h1></dt>
-<dt><h1>Pet's Age:</h1></dt> <dd><h2><%=@pet.age%></h2></dd>
-<dt><h1>Notes:</h1></dt> <dd><h2><%=@pet.notes%></h2></dd>
+<dt><h1>Pet's Age:</h1>
+</dt> <dd><h2><%=@pet.age%></h2></dd>
+<dt><h1>Notes:</h1></dt> 
+<dd><h2><%=@pet.notes%></h2></dd>
 </dl>
 </body>
 <br>
@@ -23,31 +25,31 @@
   <input type="submit" value="Log out">
 </form>
 <style>
- 
- body {
+ form {
+    margin: 0 auto; 
+    width:250px;
+}
+ body, input {
+     color: salmon;
      background-color: #F0F0F0;
       font-family: "Lucida Console", Courier, monospace;
  }
 h1 {
     color: salmon;
- 
+    text-align: center;
 }
 h2 {
     color: #FFB6C1;
-
+    text-align: center;
 }
 h3{
     color: #FFB6C1;
-   
+   text-align: center;
 }
 h4, a{
     color: red;
     text-align: center;
 
 }
-form {
-    margin: 0 auto; 
-    width:250px;
 
-}
 </style>

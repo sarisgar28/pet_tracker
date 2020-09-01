@@ -32,7 +32,7 @@ class PetsController < ApplicationController
         @pet = Pet.find_by(id: params[:id])
         @pet.update(name: params[:name],age: params[:age],notes: params[:notes])
         @pet.save
-        redirect '/pets/new'
+        redirect '/pets'
     end
 
     get '/pets/:id' do
