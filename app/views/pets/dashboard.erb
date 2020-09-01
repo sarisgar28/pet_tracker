@@ -1,9 +1,12 @@
-<h2>ABOUT YOUR FURRY FRIEND:<h2>
 
-<a href= "/pets/new">Furry Frewnd!</a><br>
 
+ <h1><a href= "/pets/new">CREATE YOUR FURRY FRIEND HERE</a></h1><br>
+
+ <img src="https://i.pinimg.com/564x/18/82/e0/1882e07aecdf7a3286a5013cdad5d0c0.jpg">
+ <br>
+<h2> HERE IS YOUR FURRY FRIEND:<h2>
 <% @pets.each do|pet| %>
-<a href="/pets/<%=pet.id%>"><%=pet.name%></a>
+<a href="/pets/<%=pet.id%>"><%=pet.name%>:<%=pet.notes%></a>
 <%end%>
 
 <br>
@@ -21,8 +24,8 @@ body {
     font-family: "Lucida Console", Courier, monospace;
   
 }
-h1 {
-    color: crimson;
+h1,a {
+    color: salmon;
     text-align: center;
 }
 h2 {
@@ -33,7 +36,12 @@ h2 {
 form { 
 margin: 0 auto; 
 width:250px;
-
+}
+img {
+     display: block;
+      margin-left: auto;
+     margin-right: auto;
+    width: 25%;
 }
 
 </style>

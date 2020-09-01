@@ -1,5 +1,4 @@
-<h1><a href='/pets'>HOME</a></h1>
-<h2>ABOUT YOUR FLUFFY FREWND:</h2>
+<h1><a href='/pets'>Your Pets</a></h1>
 
 <img src="https://i.pinimg.com/564x/7a/66/0f/7a660fde51dd767e1e0abd00b98012ad.jpg">
 <br>
@@ -10,26 +9,22 @@
 <input type="submit" value="Create your Fluff's Profile">
 </form>
 <br>
-
+<form method="post" action="/logout">
+  <input  type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log out">
+</form>
 
 <style>
 
- body {
+ body, input {
      background-color: #F0F0F0;
+     font-family: "Lucida Console", Courier, monospace;
+     color: crimson;
  }
 
-body {
-    font-family: "Lucida Console", Courier, monospace;
-  
-}
-h1 {
+h1,a {
     color: crimson;
     text-align: center;
-}
-h2 {
-    color: crimson;
-    text-align: center;
-    
 }
 form { 
 margin: 0 auto; 

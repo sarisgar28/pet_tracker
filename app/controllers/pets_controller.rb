@@ -21,6 +21,7 @@ class PetsController < ApplicationController
         erb :'/pets/new'
       end 
     end
+    
 
     get '/pets/:id/edit' do
         @pet = Pet.find_by(id: params[:id])
@@ -42,7 +43,7 @@ class PetsController < ApplicationController
     delete '/pets/:id' do 
         @pet = Pet.find_by(id: params[:id])
         @pet.destroy
-        redirect '/home'
+        redirect '/pets'
     end 
 
 

@@ -1,43 +1,12 @@
-<style>
- p {
-     color: salmon;
- }
- body {
-     background-color: #F0F0F0;
- }
 
-body {
-    font-family: "Lucida Console", Courier, monospace;
-}
-h1 {
-    color: #FFB6C1;
-    text-align: center;
-}
-h2 {
-    color: salmon;
-    text-align: center;
-}
-h3{
-    color: #FFB6C1;
-    text-align: center;
-}
-h4 {
-    color: #FFB6C1;
-
-}
-form {
-    margin: 0 auto; 
-    width:250px;
-
-}
-
-</style>
-<h4><a href= '/pets'>HOME</a></h4>
-<h1><%=@pet.name%></h1>
-<h1>Pet's Age</h1>
-<h2><%=@pet.age%></h2>
-<h1>Notes</h1>
-<h2><%=@pet.notes%></h2>
+<h4><a href= '/pets'>Your Pets</a></h4>
+<body>
+<dl>
+<dt><h1><%=@pet.name%></h1></dt>
+<dt><h1>Pet's Age:</h1></dt> <dd><h2><%=@pet.age%></h2></dd>
+<dt><h1>Notes:</h1></dt> <dd><h2><%=@pet.notes%></h2></dd>
+</dl>
+</body>
 <br>
 
 <br>
@@ -47,3 +16,38 @@ form {
   <input id="hidden" type="hidden" name="_method" value="DELETE">
   <input type="submit" value="delete">
 </form>
+
+<br>
+<form method="post" action="/logout">
+  <input  type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log out">
+</form>
+<style>
+ 
+ body {
+     background-color: #F0F0F0;
+      font-family: "Lucida Console", Courier, monospace;
+ }
+h1 {
+    color: salmon;
+ 
+}
+h2 {
+    color: #FFB6C1;
+
+}
+h3{
+    color: #FFB6C1;
+   
+}
+h4, a{
+    color: red;
+    text-align: center;
+
+}
+form {
+    margin: 0 auto; 
+    width:250px;
+
+}
+</style>

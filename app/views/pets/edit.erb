@@ -1,3 +1,4 @@
+<h1><a href="/pets">Home</a></h1>
 <form action="/pets/<%=@pet.id %>" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
 <input type="text" name="name" value="<%=@pet.name%>">
@@ -5,9 +6,31 @@
 <input type="text_area" name="notes" value="<%=@pet.notes%>">
 <input type="submit" value="Update your fluffy frewnd">
 </form>
-
+<br>
 <form method="post" action="/pets/<%=@pet.id %>">
 <input id="hidden" type="hidden" name="_method" value="DELETE">
 <input type="submit" value="delete">
 </form>
-<a href="/pets/dashboard">Home</a>
+<br>
+<form method="post" action="/logout">
+  <input  type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Log out">
+</form>
+<style>
+
+h1 {
+    text-align: center;
+}
+ body {
+     background-color: #F0F0F0;
+ }
+ body, input {
+     
+     font-family: "Lucida Console", Courier, monospace;
+ }
+form { 
+    text-align: center; 
+    margin: 0 auto; 
+    width:250px
+}
+</style>
