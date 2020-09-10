@@ -9,11 +9,13 @@ body, input {
     color: salmon;
     background-color: #F0F0F0;
     background-image: url("https://i.pinimg.com/564x/b8/d6/f8/b8d6f8b5c2b12c50752f04351d60c6b1.jpg");
+    image-rendering: auto;
     font-family: 'Indie Flower', cursive;
     text-align: center;
  }
 
 h1 {
+   margin-bottom: auto;
    color: crimson;
    text-align: center;
    background-color: lightyellow;
