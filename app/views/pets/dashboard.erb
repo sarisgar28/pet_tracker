@@ -4,10 +4,15 @@
 
  <img src="https://i.pinimg.com/564x/18/82/e0/1882e07aecdf7a3286a5013cdad5d0c0.jpg">
  <br>
+ 
 <h2> HERE ARE YOUR 🐶🐱 <h2>
-<% @pets.each do|pet| %>
-<a href="/pets/<%=pet.id%>">
-<dt><%=pet.name%></a></dt>
+<% if @pets.empty?%>
+    <p>Your list is empty</p>
+<%else%>
+    <% @pets.each do|pet| %>
+    <a href="/pets/<%=pet.id%>">
+    <dt><%=pet.name%></a></dt>
+    <%end%>
 <%end%>
 
 <br>

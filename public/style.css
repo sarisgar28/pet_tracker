@@ -1,0 +1,25 @@
+
+body {
+    background-color: #F0F0F0;
+    background-image: url("https://i.pinimg.com/564x/21/a7/98/21a798d604f9cf3c6a5b4c15043fb6d1.jpg");
+    font-family: 'Indie Flower', cursive;
+}
+
+h1,p {
+    color: rgb(197, 64, 209);
+   text-align: center;
+   background-color: rgb(236, 216, 216);
+}
+
+ h2 {
+    color: rgb(212, 14, 14);
+    text-align: center;
+    font-size: xx-large;
+    background-color: floralwhite;
+   
+}
+a{
+    transition: letter-spacing 1s, color 1s;
+    padding-bottom: 25px;
+    color: #ee7bf1;
+}

@@ -1,0 +1,25 @@
+
+ a{
+     color: salmon;
+     transition:  letter-spacing 1s, color 1s; 
+  
+
+ }
+body, input {
+    color: salmon;
+    background-color: #F0F0F0;
+    background-image: url("https://i.pinimg.com/564x/b8/d6/f8/b8d6f8b5c2b12c50752f04351d60c6b1.jpg");
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+ }
+
+h1 {
+   color: crimson;
+   text-align: center;
+   background-color: lightyellow;
+}
+h3 {
+   color: crimson;
+   text-align: center;
+   background-color: lightyellow;
+}
