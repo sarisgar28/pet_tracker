@@ -1,13 +1,15 @@
 
 
  <h1><a href= "/pets/new">CREATE YOUR FURRY FRIEND HERE</a></h1><br>
+ <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="style3.css">
 
- <img src="https://i.pinimg.com/564x/18/82/e0/1882e07aecdf7a3286a5013cdad5d0c0.jpg">
  <br>
  
 <h2> HERE ARE YOUR 🐶🐱 <h2>
-<% if @pets.empty?%>
-    <p>Your list is empty</p>
+
+<%if current_user && @pets.empty?%>
+    <p>Your pet's list is empty</p>
 <%else%>
     <% @pets.each do|pet| %>
     <a href="/pets/<%=pet.id%>">
@@ -20,32 +22,5 @@
   <input  type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Log out">
 </form>
-<style>
 
- body, input{
-     background-color: #F0F0F0;
-     font-family: "Lucida Console", Courier, monospace;
-    color: salmon;
- }
-h1,a{
-    color: salmon;
-    text-align: center;
-    text-decoration-color: LightYellow;
-}
-h2 {
-    color: crimson;
-    text-align: center;
-    
-}
-form { 
-margin: 0 auto; 
-width:250px;
-}
-img {
-     display: block;
-      margin-left: auto;
-     margin-right: auto;
-    width: 25%;
-}
-
-</style>
+ 

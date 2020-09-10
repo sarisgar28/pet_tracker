@@ -1,11 +1,21 @@
-body, input {
-    background-color: crimson;
-    background-image: url("https://i.pinimg.com/originals/c7/65/0e/c7650e9a28d2185c9c2a7d6d745edb21.png");
+body, input{
     font-family: 'Indie Flower', cursive;
-    color: crimson;
-    text-align: center;
+    background-image: url("https://i.pinimg.com/564x/be/de/a6/bedea67f3e227c02bdd8b6fe8bfbc3fb.jpg");
+   color: salmon;
 }
-
-
-
-
+h1,a{
+   color: salmon;
+   text-align: center;
+   text-decoration-color: LightYellow;
+}
+h2, p {
+   color: crimson;
+   text-align: center;
+   background-color: rgb(104, 248, 248); 
+}
+p {
+  color: crimson;
+  text-align: center;
+  padding-bottom: 100px;
+  background-color: rgb(90, 221, 193);
+}
