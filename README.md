@@ -9,5 +9,7 @@ HERE'S MY BLOG SO YOU CAN SEE SOME OF THE TECHNIQUES I USED
 
 
 https://dev.to/sarisgar28/ruby-on-sinatra-5398
+https://www.loom.com/4b714c3d-68c4-4005-b9fd-dd54e00ad417
+
 
 THANK YOU FOR TAKING A LOOK.
