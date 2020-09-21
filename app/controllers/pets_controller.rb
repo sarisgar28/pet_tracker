@@ -11,6 +11,7 @@ class PetsController < ApplicationController
         @pets = current_user.pets.all
         erb :'/pets/dashboard'
     end 
+
   
     post '/pets' do
       @pet = Pet.new(name: params[:name],age: params[:age],notes: params[:notes])

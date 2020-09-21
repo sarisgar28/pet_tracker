@@ -6,7 +6,7 @@
  <br>
    <h2> HERE ARE YOUR 🐶🐱 ! <h2>
 <%if current_user && @pets.empty?%>
-    <h2><p>Your pet's list is empty</p></h2>
+    <p>Your pet's list is empty</p>
 <%else%>
     <% @pets.each do|pet| %>
      <a href="/pets/<%=pet.id%>">
