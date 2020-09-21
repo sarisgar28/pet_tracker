@@ -3,11 +3,11 @@ body{
     background-image: url("https://i.pinimg.com/564x/be/de/a6/bedea67f3e227c02bdd8b6fe8bfbc3fb.jpg");
    color: salmon;
 }
-form, input {
-   color: salmon;
+
+h1, a {
+   color: crimson;
    text-align: center;
-   margin: auto;
-   text-decoration-color: LightYellow;
+   background-color: rgb(207, 243, 243); 
 }
 
 h2,p {
