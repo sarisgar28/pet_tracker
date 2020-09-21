@@ -12,6 +12,15 @@ class PetsController < ApplicationController
         erb :'/pets/dashboard'
     end 
 
+    post '/pets/search' do 
+      @pet = Pet.find_by(name: params[:search])
+      if current_user && @pet
+       erb :'/pets/show'
+     else
+      redirect '/pets'
+      
+      end 
+    end 
   
     post '/pets' do
       @pet = Pet.new(name: params[:name],age: params[:age],notes: params[:notes])

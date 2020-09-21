@@ -3,6 +3,11 @@
  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="style3.css">
 
+<form action="/pets/search" method="post">
+<input type="text" name="search">
+<input type="submit" value="Search">
+</form>
+
  <br>
    <h2> HERE ARE YOUR 🐶🐱 ! <h2>
 <%if current_user && @pets.empty?%>

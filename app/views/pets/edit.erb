@@ -1,5 +1,7 @@
- 
+
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/style4.css">
+     
 <h1><a href="/pets">Your Pets</a></h1>
 <form action="/pets/<%=@pet.id %>" method="post">
 <input id="hidden" type="hidden" name="_method" value="patch">
@@ -18,23 +20,4 @@
   <input  type="hidden" name="_method" value="DELETE">
   <input type="submit" value="Log out">
 </form>
-<style>
-h1,a {
-    color: crimson;
-    text-align: center;
-    font-family: 'Indie Flower', cursive;
-    background-color: lightgrey;
-}
- 
- body, input {
-     color: salmon;
-     background-color: #F0F0F0;
-     background-image: url("https://i.pinimg.com/564x/a7/a7/1e/a7a71edb41a7b4b0c73e9e6cec8d0328.jpg");
-    ;
- }
-form { 
-    text-align: center; 
-    margin: 0 auto; 
-    width:250px
-}
-</style>
+

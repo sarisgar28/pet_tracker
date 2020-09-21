@@ -1,0 +1,19 @@
+
+h1,a {
+ color: crimson;
+ text-align: center;
+ font-family: 'Indie Flower', cursive;
+ background-color: rgb(235, 203, 203);
+}
+
+body, input {
+  color: salmon;
+  background-color: rgb(236, 209, 234);
+  background-image: url("https://i.pinimg.com/564x/a7/a7/1e/a7a71edb41a7b4b0c73e9e6cec8d0328.jpg");
+ ;
+}
+form { 
+ text-align: center; 
+ margin: 0 auto; 
+ width:250px
+}

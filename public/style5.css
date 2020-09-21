@@ -1,0 +1,21 @@
+body, input {
+    background-color: #F0F0F0;
+    background-image: url("https://i.pinimg.com/originals/c7/65/0e/c7650e9a28d2185c9c2a7d6d745edb21.png");
+     font-family: 'Indie Flower', cursive;
+    color: crimson;
+}
+
+h1,a {
+   color: crimson;
+   text-align: center;
+   background-color: lightyellow;
+}
+h1 {
+  color: salmon;
+  text-align: center;
+  background-color: lightyellow;
+}
+form { 
+margin: 0 auto; 
+width:250px;
+}
