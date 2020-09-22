@@ -1,21 +1,17 @@
 
     h1,p {
-        color: rgb(197, 64, 209);
+        color: rgb(40, 209, 105);
         font-size: xx-large;
         text-align: center;
         font-weight: bolder;
     }
 
     h2 {
-        color: rgb(212, 14, 14);
+        color: rgb(245, 111, 178);
         font-size: xx-large;
         text-align: center;
     }
-     a {
-         color: #ee7bf1;
-         align-items: flex-end;
-         text-decoration: underline;
-     }
+     
   
 
     html, body {
@@ -28,10 +24,12 @@
         background-color: #d4e6ff;
         margin: auto;
       }
+      
       a {
-        color: #ee7bf1;
-        text-align: center;
-       }
+        color: #8786db;
+        align-items: flex-end;
+        text-decoration: underline;
+    }
       
       .sausage-dog-animation {
         height: 25rem;
