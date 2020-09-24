@@ -35,7 +35,9 @@ class PetsController < ApplicationController
 
     get '/pets/:id/edit' do
         @pet = Pet.find_by(id: params[:id])
+        dont_edit 
         erb :'/pets/edit'
+        
     end 
 
     patch '/pets/:id' do 

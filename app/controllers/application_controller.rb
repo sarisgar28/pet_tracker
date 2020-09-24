@@ -22,6 +22,10 @@ class ApplicationController < Sinatra::Base
      def authenticate
         redirect '/login' if !logged_in?
      end 
+     def dont_edit
+        redirect '/login' if !current_user || !current_user.pets.include?(@pet)
+        
+     end
 
     end
 
