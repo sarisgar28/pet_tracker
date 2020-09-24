@@ -1,16 +1,16 @@
 
-    h1,p {
+    h1 {
         color: rgb(40, 209, 105);
         font-size: xx-large;
         text-align: center;
         font-weight: bolder;
-    }
+       }
 
     h2 {
-        color: rgb(245, 111, 178);
-        font-size: xx-large;
-        text-align: center;
-    }
+          color: rgb(245, 111, 178);
+          font-size: xx-large;
+          text-align: center;
+      }
      
   
 

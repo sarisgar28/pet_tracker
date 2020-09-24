@@ -12,10 +12,8 @@ body, input {
   background-image: url("https://i.pinimg.com/564x/a7/a7/1e/a7a71edb41a7b4b0c73e9e6cec8d0328.jpg");
  ;
 }
-form { 
- text-align: center; 
- margin: 0 auto; 
- width:250px
-
- 
-}
+  form { 
+  text-align: center; 
+  margin: 0 auto; 
+  width:250px
+  }

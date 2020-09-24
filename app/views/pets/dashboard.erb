@@ -1,27 +1,27 @@
 
- <h1><a href= "/pets/new">CREATE YOUR FURRY FRIEND HERE:</a></h1><br>
- <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style3.css">
+  <h1><a href= "/pets/new">CREATE YOUR FURRY FRIEND HERE:</a></h1><br>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
 
-<form action="/pets/search" method="post">
-<input type="text" name="search">
-<input type="submit" value="Search">
-</form>
-
- <br>
-   <h2> HERE ARE YOUR 🐶🐱 ! <h2>
-<%if current_user && @pets.empty?%>
-    <p>Your pet's list is empty</p>
-<%else%>
-    <% @pets.each do|pet| %>
-     <a href="/pets/<%=pet.id%>">
-    <dt><%=pet.name%></a></dt>
-    <%end%>
-<%end%>
-<br>
-  <form method="post" action="/logout">
-  <input  type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Log out">
+  <form action="/pets/search" method="post">
+  <input type="text" name="search">
+  <input type="submit" value="Search">
   </form>
 
- 
+  <br>
+    <h2> HERE ARE YOUR 🐶🐱 ! <h2>
+  <%if current_user && @pets.empty?%>
+      <p>Your pet's list is empty</p>
+  <%else%>
+      <% @pets.each do|pet| %>
+      <a href="/pets/<%=pet.id%>">
+      <dt><%=pet.name%></a></dt>
+      <%end%>
+  <%end%>
+  <br>
+    <form method="post" action="/logout">
+    <input  type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Log out">
+    </form>
+
+  

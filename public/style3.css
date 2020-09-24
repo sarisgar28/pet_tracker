@@ -20,3 +20,8 @@ p {
   padding-bottom: 100px;
   background-color: rgb(90, 221, 193);
 }
+form {
+   text-align: center; 
+   margin: 0 auto; 
+   width:250px
+}
