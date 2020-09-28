@@ -11,3 +11,15 @@ https://dev.to/sarisgar28/ruby-on-sinatra-5398
 
 
 THANK YOU FOR TAKING A LOOK.
+
+dog 
+get'/dogs' #index(read)
+get'/dogs/:id'#show (read)
+
+post'/dogs' #create
+get'/dogs/new' #new
+
+get'/dogs/id/edit'
+patch'/dogs/id/ 
+
+get'/dogs/id'

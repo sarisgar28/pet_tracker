@@ -1,3 +1,4 @@
+
 class ApplicationController < Sinatra::Base 
 
     set :views, ->{File.join(root,'../views')}
@@ -8,6 +9,9 @@ class ApplicationController < Sinatra::Base
        erb :home
    end 
    
+   
+
+
    helpers do 
 
      def current_user 
@@ -22,10 +26,12 @@ class ApplicationController < Sinatra::Base
      def authenticate
         redirect '/login' if !logged_in?
      end 
+     
      def dont_edit
-        redirect '/login' if !current_user || !current_user.pets.include?(@pet)
+        redirect '/pets' if !current_user || !current_user.pets.include?(@pet)
         
      end
+     
 
     end
 

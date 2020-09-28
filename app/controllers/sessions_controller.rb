@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
             session[:user_id] = @user.id 
             redirect'/pets/new'
         else
-         erb :"sessions/signup"
+            erb :"sessions/signup"
         end
     end 
     post '/login' do 

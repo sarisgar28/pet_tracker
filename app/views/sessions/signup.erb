@@ -5,9 +5,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 <h3>Sign Up<h3>
 
-<% if current_user && current_user.errors.any? %>
-    <%current_user.errors.full_messages.each do |m|%>
-<p class="danger"><%= m%></p>
+<% if @user && @user.errors.any? %>
+    <%@user.errors.full_messages.each do |m|%>
+<p class="danger"><%=m%></p>
+
     <%end%>
 <%end%>
 
